@@ -1,6 +1,6 @@
 'use strict'
 
-const ytApiKey = 'AIzaSyCPDWJ9RXfAc2Whw9rFBpQKFv87M0eoAoQ';
+const ytApiKey = 'AIzaSyDcy-PIQJoWf8aOCIiWFC7kHaoSK9imKyg';
 const ytSearchUrl = 'https://www.googleapis.com/youtube/v3/search';
 
 function getVideos(query, maxResults) {
@@ -35,10 +35,11 @@ function ytDisplayResults(responseJson) {
 
         $('#ytResults-list').append(
             `<li><h3>${responseJson.items[i].snippet.title}</h3>
-      <p>${responseJson.items[i].snippet.description}</p>
       <a href="https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}"><img src='${responseJson.items[i].snippet.thumbnails.default.url}'></a>
+      <p>${responseJson.items[i].snippet.description}</p>
       </li>`
-        )};
+        )
+    };
 
     $('#ytResults').removeClass('hidden');
 }

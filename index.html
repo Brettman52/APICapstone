@@ -4,37 +4,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Recipe Finder</title>
+    <title>The Recipe Browser</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c253a631fe.js"></script>
 </head>
 
+
 <body>
-    <header>Recipe Finder</header>
+
+    <section id="hero">
+        <h1>The Recipe Explorer </h1>
+    </section>
     <form id="js-form">
-        <label for="js-recipe-search">Find a recipe related to</label>
-        <input type="text" name="recipe-search" id="js-recipe-search"><br>
-        <label for="js-max-results">Max results to return (up to 10)</label>
-        <input type="text" name="maximum-results" id="js-max-results"><br>
-        <input type="submit" value="Search Recipes!" name="get-recipes" id="js-submit">
+
+        <div class="recipe-search-container">
+            <label id="js-recipe-search-label" for="js-recipe-search">Explore recipes related to...</label>
+            <input type="text" name="recipe-search" id="js-recipe-search" required><br>
+        </div>
+        <div id="max-results-container">
+            <label id="js-max-results-label" for="js-max-results">Max results (from each source)</label>
+            <select id="js-max-results">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option selected value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+            </select>
+            <input type="submit" value="Go!" name="get-recipes" id="js-submit">
+        </div>
     </form>
 
     <p id="js-error-message" class="error-message"></p>
-    <section id="results" class="hidden">
-        <h2>Search results</h2>
-        <ul id="results-list">
-        </ul>
-    </section>
-    <section id="ytResults" class="hidden">
-        <h2>Rather see recipe videos?</h2>
-        <ul id="ytResults-list">
-        </ul>
-    </section>
-
-
+    <div class="flexContainer">
+        <section id="results" class="hidden">
+            <h2>Explore Yummly...</h2>
+            <ul id="results-list">
+            </ul>
+        </section>
+        <section id="ytResults" class="hidden">
+            <h2>Explore YouTube...</h2>
+            <ul id="ytResults-list">
+            </ul>
+        </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="youtube.js"></script>
+
 </body>
 
 </html>

@@ -1,7 +1,159 @@
-.hidden {
-  display: none;
+#hero h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    font-family: 'Pacifico', cursive;
+}
+
+body:after {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url("pexels-photo-616404.jpeg") no-repeat 50% 50%;
+	background-size:cover;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+}
+
+.recipe-search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#js-recipe-search {
+    height: 40px;
+    width: 60%;
+    outline: 0;
+    font-size: 20px;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+}
+
+#js-submit {
+    border-radius: 4px;
+    background-color: black;
+    font-size: 100%;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin-left: 10px;
+}
+
+#max-results-container {
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: black !important;
+}
+
+
+::placeholder {
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+}
+
+#results-list,
+#ytResults-list {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 li {
-  list-style: none;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-color: transparent;
+    background-color: rgba(160, 82, 45, 0.5);
+    font-family: 'Alegreya Sans', sans-serif;
+    list-style: none;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+.food-img {
+    height: 150px;
+    width: 200px;
+    color: black;
+}
+
+#js-recipe-search-label {
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+#js-max-results {
+    width: 50px;
+    background: rgb(220, 220, 220, 0.25);
+    border-color: black;
+    outline: 0;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#js-max-results-label {
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.hidden {
+    display: none;
+}
+
+#js-error-message {
+    color: #D8000C;
+    background-color: #FFBABA;
+    font-family: Helvetica;
+    font-style: italic;
+    font-size: 75%;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    .flexContainer {
+        display: flex;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    body{
+
+    background: url("pexels-photo-616404.jpeg") no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    
+}
+
 }
