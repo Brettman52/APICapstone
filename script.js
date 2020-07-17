@@ -3,7 +3,7 @@
 const searchUrl = "https://yummly2.p.rapidapi.com/feeds/search";
 const options = {
     headers: new Headers({
-        "x-rapidapi-key": "257874137amsh8d18eadb6075e1ep1f68cbjsn9ca6f277f828",
+        "x-rapidapi-key": "9511797fe0mshf2322090205ee04p126d54jsne05729519835",
         "x-rapidapi-host": "yummly2.p.rapidapi.com"
     })
 }

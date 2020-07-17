@@ -74,12 +74,10 @@ input:-webkit-autofill:active {
     font-size: 20px;
 }
 
-#results-list,
-#ytResults-list {
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
 
+
+ul{
+  margin-right: 45px;
 }
 
 li {
@@ -91,8 +89,9 @@ li {
     background-color: rgba(160, 82, 45, 0.5);
     font-family: 'Alegreya Sans', sans-serif;
     list-style: none;
-    max-width: 90%;
+    max-width: 600px;
     overflow: hidden;
+   
 }
 
 .food-img {
@@ -138,10 +137,11 @@ li {
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
 
     .flexContainer {
         display: flex;
+       justify-content: center;
     }
 
     img {
