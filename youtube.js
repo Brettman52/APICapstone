@@ -1,6 +1,6 @@
 'use strict'
 
-const ytApiKey = 'AIzaSyDcy-PIQJoWf8aOCIiWFC7kHaoSK9imKyg';
+const ytApiKey = 'AIzaSyAZM1kgeT0IbxiOkhRBNNPJsvDMivD1pMY';
 const ytSearchUrl = 'https://www.googleapis.com/youtube/v3/search';
 
 function getVideos(query, maxResults) {
