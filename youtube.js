@@ -35,7 +35,7 @@ function ytDisplayResults(responseJson) {
 
         $('#ytResults-list').append(
             `<li><h3>${responseJson.items[i].snippet.title}</h3>
-      <a href="https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}"><img src='${responseJson.items[i].snippet.thumbnails.default.url}'></a>
+      <a href="https://www.youtube.com/watch?v=${responseJson.items[i].id.videoId}" target="_blank"><img src='${responseJson.items[i].snippet.thumbnails.default.url}'></a>
       <p>${responseJson.items[i].snippet.description}</p>
       </li>`
         )
