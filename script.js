@@ -38,7 +38,7 @@ function displayResults(responseJson) {
     for (let i = 0; i < responseJson.feed.length; i++) {
         $("#results-list").append(`<li>
           <h3>${responseJson.feed[i].display.displayName}</h3>
-          <a href="${responseJson.feed[i].seo.web['link-tags'][0].href}"><img class="food-img" src='${responseJson.feed[i].display.images[0]}'></a>
+          <a href="${responseJson.feed[i].seo.web['link-tags'][0].href}" target="_blank"><img class="food-img" src='${responseJson.feed[i].display.images[0]}'></a>
           <p>${truncateDesc(responseJson.feed[i].seo.web['meta-tags'].description)}</p>
           </li>`)
     };
