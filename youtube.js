@@ -26,9 +26,10 @@ function getVideos(query, maxResults) {
         .catch(err => {
             $('#js-error-message').text(`Something went wrong: ${err.message}`);
         });
+    
+console.log(url);
 }
 
-console.log(url);
 
 function ytDisplayResults(responseJson) {
     $('#ytResults-list').empty();
