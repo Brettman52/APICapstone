@@ -28,6 +28,8 @@ function getVideos(query, maxResults) {
         });
 }
 
+console.log(url);
+
 function ytDisplayResults(responseJson) {
     $('#ytResults-list').empty();
 
